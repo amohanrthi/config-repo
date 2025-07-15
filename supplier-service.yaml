@@ -26,6 +26,9 @@ h2:
 server:
   port: 9091
 
+welcome:
+  message: Welcome to Spring Cloud Config (GIT) training :) WELCOME BACK!!!
+
 logging:
   level:
     root: INFO
