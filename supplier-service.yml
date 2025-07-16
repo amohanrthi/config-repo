@@ -2,9 +2,20 @@ welcome:
   message: "Welcome to Spring Cloud Config (GIT) training :) WELCOME BACK!!!"
   
 spring:
-  datasource:
-   url: jdbc:h2:mem:supplierdb
-   driver-class-name: org.h2.Driver
-   username: sa
-   password:
+  #  datasource:
+#    url: jdbc:h2:mem:supplierdb
+#    driver-class-name: org.h2.Driver
+#    username: sa
+#    password:
 
+# Use this for PostgreSQL (comment H2 out when using this)
+  datasource:
+    url: jdbc:postgresql://localhost:5432/training
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update  # change to 'create' to recreate tables
+    show-sql: true
