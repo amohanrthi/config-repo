@@ -1,0 +1,17 @@
+spring:
+#datasource:
+    #url: jdbc:postgresql://localhost:5432/productdb
+    #username: postgres
+    #password: postgres
+    #driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update  # change to 'create' to recreate tables
+    show-sql: true
+
+logging:
+  level:
+    com.lowes.matchxapp: DEBUG
+  file:
+    name: "logs/product.log"
