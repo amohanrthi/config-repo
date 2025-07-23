@@ -1,9 +1,17 @@
+
 spring:
-#datasource:
-    #url: jdbc:postgresql://localhost:5432/productdb
-    #username: postgres
-    #password: postgres
-    #driver-class-name: org.postgresql.Driver
+  #  datasource:
+#    url: jdbc:h2:mem:supplierdb
+#    driver-class-name: org.h2.Driver
+#    username: sa
+#    password:
+
+# Use this for PostgreSQL (comment H2 out when using this)
+  datasource:
+    url: jdbc:postgresql://localhost:5432/productdb
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
@@ -13,5 +21,6 @@ spring:
 logging:
   level:
     com.lowes.matchxapp: DEBUG
+
   file:
     name: "logs/product.log"
