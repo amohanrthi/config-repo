@@ -1,4 +1,4 @@
-security:
-  jwt:
-    secret-key: springsecurityjwtsecret
-    token-duration: 1D
+# security:
+#   jwt:
+#     secret-key: springsecurityjwtsecret
+#     token-duration: 1D
