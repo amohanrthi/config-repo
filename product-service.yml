@@ -8,7 +8,7 @@ spring:
 
 # Use this for PostgreSQL (comment H2 out when using this)
   datasource:
-    url: jdbc:postgresql://localhost:5432/productdb
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:5432/productdb
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
