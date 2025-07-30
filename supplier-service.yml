@@ -7,7 +7,7 @@ spring:
 
 # Use this for PostgreSQL (comment H2 out when using this)
   datasource:
-    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:5432/supplierdb
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:5435/supplierdb
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
