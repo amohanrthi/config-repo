@@ -8,9 +8,9 @@ spring:
 
 # Use this for PostgreSQL (comment H2 out when using this)
   datasource:
-    url: jdbc:postgresql://localhost:5432/orderdb
-    username: postgres
-    password: postgres
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:5432/orderdb
+    username: ${POSTGRES_USER:postgres}
+    password: ${POSTGRES_PASSWORD:postgres}
     driver-class-name: org.postgresql.Driver
 
   jpa:
